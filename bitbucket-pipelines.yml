@@ -1,0 +1,9 @@
+pipelines:
+  default:
+   - step:
+        name: check
+        image: alexshcdr/hmi-boss-debian-stable-x86_64
+        script:
+          - echo "It works"
+
+
