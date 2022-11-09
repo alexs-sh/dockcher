@@ -1,0 +1,13 @@
+name: Build
+on: [push]
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Check
+        run: docker run alexshcdr/hmi-boss-debian-stable-x86_64 bash -c 'echo "It works"'
+
+
